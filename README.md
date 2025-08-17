@@ -23,4 +23,5 @@ Visulize_WGMS_Annual_MB_TM_2025/
 └── Tables/
     ├── Alaska_unobserved_statistics.csv
 
-**License**: MIT License.
+# License
+MIT License

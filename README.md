@@ -20,7 +20,7 @@ Visulize_WGMS_Annual_MB_TM_2025/
 ├── Table_Glacier_individual.py
 ├── Figures/
 │   ├── glacier_mass_change.gif
-└── Tables/
+└── Table/
     ├── Alaska_unobserved_statistics.csv
 
 # License

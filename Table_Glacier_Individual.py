@@ -7,6 +7,7 @@
 # Import necessary libraries
 import pandas as pd
 import os
+import argparse
 
 
 # Function to analyze unobserved glaciers at the subregion level for the specified region
@@ -60,6 +61,11 @@ def analyze_unobserved_glacier_data(region_code = None, region_name = None, path
     print(f"Statistic info about unobserved glaciers in each subregion in {region_name} ({region_code}):\n")
     print(result)
 
+    # Save the results to a CSV file
+    output_csv = os.path.join(path_individual, f"{region_name}_unobserved_statistics.csv")
+    result.to_csv(output_csv, index=False)
+    print(f"Results saved to {output_csv}")
+
     return result
 
 
@@ -87,9 +93,6 @@ def main():
 if __name__ == "__main__":
     # Example usage:
     print("Table Glacier Individual Analysis Script (Version 1.0)")
-    print(f"Region Code: {region_code}")
-    print(f"Region Name: {region_name}")
-    print(f"Path to Individual Data: {path_individual}")
     main()
 
 

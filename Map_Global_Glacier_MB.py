@@ -178,8 +178,8 @@ def create_global_grid_map_gif(file_path=None, variable_name=None, title_n=None,
                 ax.coastlines()
                 
                 # Configure grid
-                ax.set_xticks(np.arange(-180, 181, 30), crs=ccrs.PlateCarree())
-                ax.set_yticks(np.arange(-90, 91, 30), crs=ccrs.PlateCarree())
+                # ax.set_xticks(np.arange(-180, 181, 30), crs=ccrs.PlateCarree())
+                # ax.set_yticks(np.arange(-90, 91, 30), crs=ccrs.PlateCarree())
                 ax.gridlines(draw_labels=True, linewidth=0.5, alpha=0.5)
 
                 # Add colorbar
